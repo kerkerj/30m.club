@@ -36,9 +36,11 @@ header {
 	border-left: 1px solid black;
   border-width: 10px;
 	
-	-ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+		 -moz-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			 -o-transform: rotate(-45deg);
+  				transform: rotate(-45deg);
 }
 
 .chart .item {
@@ -53,18 +55,20 @@ header {
 
 .chart .thirdty-cm {
 	width: 30%;
-
-	animation-duration: 5s;
-  animation-name: bigger-30cm;
-  animation-iteration-count: infinite;
+	
+	-webkit-animation: bigger-30cm 5s linear 0s infinite alternate;
+		 -moz-animation: bigger-30cm 5s linear 0s infinite alternate;
+			 -o-animation: bigger-30cm 5s linear 0s infinite alternate;
+  				animation: bigger-30cm 5s linear 0s infinite alternate;
 }
 
 .chart .thirdty-m {
 	width: 75%;
-
-	animation-duration: 5s;
-  animation-name: bigger-30m;
-  animation-iteration-count: infinite;
+	
+	-webkit-animation: bigger-30m 5s linear 0s infinite alternate;
+		 -moz-animation: bigger-30m 5s linear 0s infinite alternate;
+			 -o-animation: bigger-30m 5s linear 0s infinite alternate;
+  				animation: bigger-30m 5s linear 0s infinite alternate;
 }
 
 .chart .item .item_body {
@@ -85,10 +89,12 @@ header {
 	text-align: center;
 	background: red; 
 	
-	-moz-border-radius: 0 50px 50px 0;
-	-webkit-border-radius:  0 50px 50px 0;
-	border-radius:  0 50px 50px 0;
 	border: 1px solid black;	
+
+	-webkit-border-radius:  0 50px 50px 0;
+	 	 -moz-border-radius: 0 50px 50px 0;
+	 	 	 -o-border-radius: 0 50px 50px 0;
+					border-radius:  0 50px 50px 0;
 }
 
 footer {
@@ -100,33 +106,15 @@ footer {
 	bottom: 0%;
 }
 
-@keyframes bigger-30cm {
-  0% {
-    width: 16%;
-  }
-	
-	50% {
-		width: 30%;
-	}
+@-webkit-keyframes bigger-30cm { 0% { width: 16%; } 50% { width: 30%; } 100% { width: 16%; } }
+	 @-moz-keyframes bigger-30cm { 0% { width: 16%; } 50% { width: 30%; } 100% { width: 16%; } }
+		 @-o-keyframes bigger-30cm { 0% { width: 16%; } 50% { width: 30%; } 100% { width: 16%; } }
+				@keyframes bigger-30cm { 0% { width: 16%; } 50% { width: 30%; } 100% { width: 16%; } }
 
-  100% {
-    width: 16%;
-  }
-}
-
-@keyframes bigger-30m {
-  0% {
-    width: 30%;
-  }
-	
-	50% {
-		width: 70%;
-	}
-
-  100% {
-    width: 30%;
-  }
-}
+@-webkit-keyframes bigger-30m { 0% { width: 30%; } 50% { width: 70%; } 100% { width: 30%; } }
+	 @-moz-keyframes bigger-30m { 0% { width: 30%; } 50% { width: 70%; } 100% { width: 30%; } }
+		 @-o-keyframes bigger-30m { 0% { width: 30%; } 50% { width: 70%; } 100% { width: 30%; } }
+				@keyframes bigger-30m { 0% { width: 30%; } 50% { width: 70%; } 100% { width: 30%; } }
 
 </style>
 <body>
