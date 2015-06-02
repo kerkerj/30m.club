@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>30m.club</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<style>
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;	
+	font-size: 100%;
+}
+
+header {
+	font-size: 5em;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.chart {
+	position: absolute;
+	top: 100px;
+	left: -3%;
+	width: 100%;
+	margin: 0 auto;
+	border-left: 1px solid black;
+  border-width: 10px;
+	
+	-ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.chart .item {
+	width: 90%;
+  height: 50px;
+
+  font: 20px sans-serif;
+  text-align: left;
+  color: white;
+  margin: 20px 0;
+}
+
+.chart .thirdty-cm {
+	width: 30%;
+
+	animation-duration: 5s;
+  animation-name: bigger-30cm;
+  animation-iteration-count: infinite;
+}
+
+.chart .thirdty-m {
+	width: 75%;
+
+	animation-duration: 5s;
+  animation-name: bigger-30m;
+  animation-iteration-count: infinite;
+}
+
+.chart .item .item_body {
+	float: left;
+	display: inline-block;
+	width: inherit;
+	height: 100%;
+	background-color: steelblue;
+}
+
+.chart .item .item_head {
+	float:left;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	font-size: 12pt;
+	line-height: 50px;
+	text-align: center;
+	background: red; 
+	
+	-moz-border-radius: 0 50px 50px 0;
+	-webkit-border-radius:  0 50px 50px 0;
+	border-radius:  0 50px 50px 0;
+	border: 1px solid black;	
+}
+
+footer {
+	position: absolute;
+	height: 50px;
+	font-size: 1.25em;
+	
+	right: 5%;
+	bottom: 0%;
+}
+
+@keyframes bigger-30cm {
+  0% {
+    width: 16%;
+  }
+	
+	50% {
+		width: 30%;
+	}
+
+  100% {
+    width: 16%;
+  }
+}
+
+@keyframes bigger-30m {
+  0% {
+    width: 30%;
+  }
+	
+	50% {
+		width: 70%;
+	}
+
+  100% {
+    width: 30%;
+  }
+}
+
+</style>
+<body>
+<header>30cm V.S. 30m</header>
+
+<div class="chart">
+	<div class="item thirdty-cm">
+		<div class="item_body"></div>
+		<div class="item_head"><span>30cm</span></div>
+	</div>
+	<div class="item thirdty-m">
+		<div class="item_body"></div>
+		<div class="item_head"><span>30m</span></div>
+	</div>
+</div>
+
+<footer>Copyright © 2015 kerkerj</footer>
+</body>
+</html>
